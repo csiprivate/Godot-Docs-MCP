@@ -66,7 +66,7 @@ function assertRepoReady(): void {
   if (!existsSync(repoRoot)) {
     throw new McpError(
       ErrorCode.InternalError,
-      `Godot-Doku-Repo nicht gefunden: ${repoRoot}. Fuehre scripts/update-godot-docs.ps1 oder scripts/update-godot-docs.sh aus.`
+      `Godot-Doku-Repo nicht gefunden: ${repoRoot}. Fuehre npm run setup aus oder nutze scripts/update-godot-docs.ps1 beziehungsweise scripts/update-godot-docs.sh.`
     );
   }
 }

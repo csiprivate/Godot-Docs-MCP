@@ -13,6 +13,7 @@
   "scripts": {
     "build": "tsc",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js",
+    "setup": "node scripts/setup.mjs",
     "test": "node --test"
   },
   "dependencies": {

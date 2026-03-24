@@ -18,8 +18,8 @@ Local mirror and MCP server for the official Godot stable documentation.
 ```powershell
 cd E:\Repos\godot-docs-mcp
 npm install
+npm run setup
 npm run build
-powershell -ExecutionPolicy Bypass -File scripts/update-godot-docs.ps1
 ```
 
 ### Linux / macOS
@@ -27,9 +27,11 @@ powershell -ExecutionPolicy Bypass -File scripts/update-godot-docs.ps1
 ```bash
 cd /path/to/godot-docs-mcp
 npm install
+npm run setup
 npm run build
-bash scripts/update-godot-docs.sh
 ```
+
+`npm run setup` lädt den lokalen Mirror automatisch. Die Plattform-Skripte bleiben für manuelle Refreshes verfügbar.
 
 ## Codex MCP entry
 
