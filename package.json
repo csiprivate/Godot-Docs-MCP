@@ -1,0 +1,28 @@
+{
+  "name": "godot-docs-mcp",
+  "version": "0.1.0",
+  "description": "Local MCP server for searching and reading official Godot stable documentation.",
+  "type": "module",
+  "bin": {
+    "godot-docs-mcp": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "scripts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
